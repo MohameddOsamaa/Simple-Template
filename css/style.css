@@ -1,61 +1,76 @@
-.body{
+body{
 	font-family: 'Open Sans', sans-serif;
 }
 .container{
-	width: 1200px;
+	width: 1000px;
 	margin: auto;
+	position: relative
+}
+
+.table{
+	height: 100%;
+	display:table
+}
+
+.table-row{
+	display: table-row;
 }
 
 
 .text-center{
-	text-align: center;
+	text-align: center
 }
 
 .upper{
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
 .main-color{
-	color: #f7600e;
+	color: #f7600e
 }
 
 .background-color{
-	background-color: #f7600e;
+	background-color: #f7600e
 }
 
 .header{
-	background: url('./imgs/headerbackground.jpg');
+	background: url('../img/headerbackground.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size:  cover;
 	-o-background-size: cover;
 	background-size: cover;
-	color: #FFF;
+	color: #FFF
 }
 
 .header .navbar{
-
+	overflow: hidden;
 	padding: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%
 }
 
 .header .navbar .links{
-	float: right;
+	float: right
 }
 .header .navbar .links i{
-	margin-left: 3px;
+	margin-left: 3px
 }
+
 
 .header .intro h1{
 	margin: 0;
 	font-weight: 800;
 	font-size:50px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif
 }
 
 .header .intro .p{
 	margin: 50px 0 50px;
 	line-height:1.9;
 	font-size:20px;
-	color: #E2E2E2;
+	color: #E2E2E2
 }
 
 
@@ -77,13 +92,13 @@
 	border-radius: 10px;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out
 }
 
 .header .Buttons Button:hover {
     background-color: #f7600e;
     color: #FFF;
-    border: 1px solid #f7600e;
+    border: 1px solid #f7600e
 }
 
 .header .arrow{
@@ -92,5 +107,5 @@
 	left: 0;
 	width: 100%;
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px 0
 }
