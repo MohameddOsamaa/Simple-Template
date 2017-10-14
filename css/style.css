@@ -34,7 +34,7 @@ body{
 }
 
 .header{
-	background: url('../imgs/headerbackground.png');
+	background: url('../img/headerbackground.png');
 	-webkit-background-size: cover;
 	-moz-background-size:  cover;
 	-o-background-size: cover;
