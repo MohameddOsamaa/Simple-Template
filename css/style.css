@@ -1,3 +1,13 @@
+
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -33,8 +43,20 @@ body{
 	background-color: #f7600e
 }
 
+.overlay{
+	background: rgba(49,55,61,.8);
+	width: 100%;
+	height: 100%
+}
+
+.hidden{
+	display: none;
+}
+
+
+
 .header{
-	background: url('../img/headerbackground.png');
+	background: url('../images/headerbackground.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size:  cover;
 	-o-background-size: cover;
@@ -49,6 +71,10 @@ body{
 	top: 0;
 	left: 0;
 	width: 100%
+}
+
+.header .navbar{
+	font-weight: bold;
 }
 
 .header .navbar .links{
@@ -74,19 +100,13 @@ body{
 }
 
 
-
-.header .overlay{
-	background: rgba(49,55,61,.8);
-	width: 100%;
-	height: 100%
-}
-
 .header .Buttons Button{
 	width: 180px;
 	color: #FFF;
 	background: transparent;
 	padding: 10px 0;
 	margin: 0px;
+	margin-top: 50px;
 	font-size: 14px;
 	border: 1px solid #909090;
 	border-radius: 10px;
@@ -98,14 +118,438 @@ body{
 .header .Buttons Button:hover {
     background-color: #f7600e;
     color: #FFF;
-    border: 1px solid #f7600e
+    border: 1px solid #f7600e;
+    cursor: pointer;
 }
 
 .header .arrow{
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	width: 100%;
+	left: 672px;
 	text-align: center;
-	padding: 20px 0
+	border:1px solid;
+	padding: 0 2px;
+    border-radius: 24px;
+    margin-bottom: 5px;
 }
+
+.header .arrow i{
+	height: 27px;
+    width: 28px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+
+.feature{
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.feature .box{
+	width: 22%;
+	float: left;
+	margin-right: 4%;
+}
+
+.feature .box:last-child {
+	margin-right: 0
+}
+
+.feature .box i {
+	color: #f7600e;
+	border:1px solid #ccc;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	line-height: 100px;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	
+}
+
+.feature .box i:hover {
+	background-color: #f7600e;
+	border:1px solid #f7600e;
+	color: #FFF;
+}
+
+.feature .box h3{
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.feature .box p{
+	font-weight: lighter;
+	color: #666;
+}
+
+.subscribe{
+	background: url('../images/tablet.png');
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.subscribe form{
+	padding: 60px 0;
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.subscribe form input[type='email']{
+	padding: 0 10px 2px;
+	width: 400px;
+	font-size: 20px;
+	border-radius: 10px;
+	position: relative;
+	top: 2px;
+	border:none;
+	height: 37px;
+	line-height: 37px;
+
+}
+
+.subscribe form button {
+	padding:  9px;
+	width: 200px;
+	border:1px ;
+	background-color: #f7600e;
+	border:none;
+	color: #FFF;
+	border-radius: 9px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.subscribe ::-webkit-input-placeholder {
+	font-size: 14px;
+}
+
+.subscribe :-moz-input-placeholder {
+	font-size: 14px;
+}
+
+.subscribe :-ms-input-placeholder {
+	font-size: 14px;
+}
+
+.our-work {
+	padding: 50px;
+
+}
+
+.our-work h2{
+	font-weight: 500px;
+	font-size: 35px;
+	margin-bottom: 0;
+}
+
+.our-work h2 ~ p {
+	line-height: 2;
+	margin-left: 10px 0 40px;
+}
+
+.our-work .img-box{
+	overflow: hidden;
+}
+
+.our-work .img-box .img{
+	float: left;
+	width: 30%;
+	overflow: hidden;
+	margin-left: 1%;
+	margin-bottom: 8px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.our-work .img-box .img:hover .over{
+	display: block;
+}
+
+.our-work .img-box .img .over{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(247,96,14,.8);
+	color: #FFF;
+	-webkit-transition: all .10s ease-in-out;
+	-moz-transition: all .10s ease-in-out;
+	transition: all .10s ease-in-out;
+	display: none;
+}
+
+.our-work .img-box .img .over h4{
+	font-size: 25px;
+	font-weight: normal;
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
+.our-work .img-box .img .over p{
+	font-size: 10px;
+}
+
+.our-work .img-box .img .over button {
+	background: transparent;
+	width: 180px;
+	border:1px solid #FFF;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 30px;
+	color: #FFF;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+
+.our-work .img-box .img .over button:hover{
+	background-color: #FFF;
+    color: #f7600e;
+    border: 1px solid #FFF;
+
+}
+
+
+.show-more {
+	width: 180px;
+	padding: 10px;
+	background: transparent;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin-top: 20px;
+	color: #555;
+}
+
+.Testimonials {
+	
+	background: url('../images/woman.png');
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.Testimonials .client{
+	padding: 60px 0;
+	color: #fff;
+	font-size: 20px;
+}
+
+.Testimonials .client img{
+	border-radius: 50%;
+}
+
+.Testimonials .client p {
+	line-height: 2;
+	font-style: italic;
+}
+
+.Testimonials .fa-chevron-right{
+	position: absolute;
+	top: 40%;
+	right: 0;
+	color:#999;
+	cursor: pointer;
+}
+
+.Testimonials .fa-chevron-left{
+	position: absolute;
+	top:40%;
+	left: 0;
+	color: #999;
+	cursor: pointer;
+}
+
+.Testimonials .fa-chevron-right:hover,
+.Testimonials .fa-chevron-left:hover{
+	color: #f7600e;
+}
+
+
+.our-team{
+	padding: 50px 0;
+}
+
+.our-team h2{
+	font-size: 35px;
+	margin-bottom: 0;
+}
+
+.our-team .mainp{
+	margin: 10px 0 40px;
+	line-height: 2;
+	color: #666;
+	font-size: 20px; 
+}
+
+.our-team .team{
+	overflow: hidden;
+}
+
+.our-team .team .person{
+	float: left;
+	width: 24%;
+	margin-left:1%;
+	color: #888;
+}
+
+.our-team .team .person:hover {
+	color: #555;
+}
+
+.our-team .team .person:hover img {
+	filter: none;
+	-webkit-filter: grayscale(0);
+}
+
+.our-team .team .person img{
+	width: 244px;
+	height: 290px;
+	border-radius: 10px;
+	filter: gray;
+	filter: grayscale(1);
+	-webkit-filter:grayscale(1);
+}
+
+.our-team .team .person p{
+	font-size: 13px;
+
+}
+
+.our-team .team .social-icons i{
+	background-color: #b3afaf;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+
+.our-team .team .person:hover  .fa-facebook{
+	background-color: #3B5998;
+} 
+
+
+.our-team .team .person:hover  .fa-linkedin{
+	background-color: #0077b5;
+}
+
+.our-team .team .person:hover  .fa-twitter{
+	background-color: #1da1f2;
+}
+
+.contact-form{
+ 	display: -webkit-box;
+	background: url('../images/city.png');
+	-webkit-background-size: cover;
+	-moz-background-size:  cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.contact-form .overlay{
+	padding: 50px 0;
+	color: #FFF;
+}
+
+.contact-form h2{
+	font-size: 35px;
+}
+
+.contact-form form{
+	width: 700px;
+	height: 200px;
+	text-align: center;
+	margin: auto;
+}
+
+.contact-form form input{
+	width: 39%;
+	height: 40px;
+	padding: 0 10px;
+	line-height: 40px;
+	border-radius: 10px;
+	border:1px solid #CCC;
+	margin-left: 5%;
+	margin-right: 35px;
+
+}
+
+.contact-form form textarea{
+	margin-top: 10px;
+	width: 89%;
+	height: 150px;
+	padding:15px;
+	border-radius: 10px;
+	border:1px solid #CCC;
+}
+
+.contact-form form button{
+	float: left;
+	padding:  9px;
+	width: 150px;
+	border:1px ;
+	background-color: #f7600e;
+	border:none;
+	color: #FFF;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-left: 36px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.contact-form .form-icons{
+	float: right;
+	margin-right: 185px;
+}
+
+.contact-form .form-icons i{
+	padding: 10px 0 27px;
+	width: 35px;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 11px;
+	line-height: 18px;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+.contact-form .form-icons .fa-facebook{
+	background-color: #3B5998;
+}
+
+.contact-form .form-icons .fa-twitter{
+	background-color: #1da1f2;
+}
+
+.contact-form .form-icons .fa-linkedin{
+	background-color: #0077b5;
+
+}
+
+.contact-form .form-icons .fa-google-plus{
+	background-color: #dd4b39;
+}
+
+.footer {
+	background-color: #3b434c;
+	color: #FFF;
+	overflow: hidden;
+	text-align: center;
+	height: 50px;
+}
+
+.copyright{
+	margin-top: 20px;
+}
+
